@@ -4,3 +4,26 @@
 @media(max-width:620px){.page-shell{width:min(100% - 1rem,1120px);padding-top:1.8rem}.topbar{padding:0 .75rem}.intro h1{font-size:2.35rem}.privacy-note{width:100%}.section-heading,.action-row,.results-head{align-items:stretch;flex-direction:column}.field.compact{grid-template-columns:1fr}.secondary-actions{display:grid;grid-template-columns:1fr 1fr}.button.primary{width:100%}.input-meta{flex-direction:column;gap:.15rem}.progress-card{grid-template-columns:auto 1fr}.progress-card .button{grid-column:1/-1}.summary-grid{grid-template-columns:1fr 1fr}.metric{padding:.8rem}.filter-tabs{display:grid;grid-template-columns:1fr 1fr}.toolbar-actions{flex-direction:column}.comparison{display:block;overflow-x:auto}.export-menu{width:100%}}
 .input-meta small{display:block;margin-top:.15rem}.detection-warning{color:var(--warn);font-weight:700}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Versión 1.2: identidad visual monocromática y panel de revisión */
+:root{--navy:#111;--blue:#202020;--cyan:#4c4c4c;--ink:#151515;--muted:#606060;--line:#d7d7d7;--surface:#fff;--soft:#f5f5f5;--shadow:0 14px 38px rgba(0,0,0,.08);--radius:14px}
+body{background:linear-gradient(180deg,#ededed 0,#f8f8f8 340px);font-family:Calibri,Aptos,"Segoe UI",Arial,sans-serif}
+.intro h1,.results-head h2,.reference-text,dialog h2{font-family:Calibri,Aptos,"Segoe UI",Arial,sans-serif}
+.brand-mark,.button.primary{background:#111}.button.primary:hover{background:#333}
+.eyebrow{color:#333}.step{background:#ededed;color:#111}.privacy-note{border-color:#d5d5d5;color:#333}
+.report-meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;padding:1rem;background:#f5f5f5;border:1px solid #e0e0e0;border-radius:11px}
+.results-workbench{--list-width:38%;display:grid;grid-template-columns:minmax(280px,var(--list-width)) 10px minmax(360px,1fr);height:min(720px,72vh);min-height:520px;margin-top:1rem;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;box-shadow:var(--shadow)}
+.results-pane,.detail-pane{min-width:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.results-pane{padding:.8rem;background:#f5f5f5}.detail-pane{padding:1.25rem;background:#fff}
+.column-splitter{position:relative;cursor:col-resize;background:#e2e2e2;border-left:1px solid #d0d0d0;border-right:1px solid #d0d0d0}
+.column-splitter::after{content:"";position:absolute;top:50%;left:50%;width:3px;height:48px;border-left:1px solid #777;border-right:1px solid #777;transform:translate(-50%,-50%)}
+.column-splitter:hover,.column-splitter:focus-visible{background:#cfcfcf}
+.result-list{margin-top:0}.result-card{cursor:default}.result-card.selected{outline:3px solid #222;outline-offset:-2px;background:#fcfcfc}.result-main{display:block}.result-toggle{margin-top:.75rem;width:100%}
+.detail-placeholder{height:100%;display:grid;place-content:center;text-align:center;color:var(--muted);gap:.35rem}.detail-placeholder strong{color:#222;font-size:1.1rem}
+.detail-header{border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:1rem}.detail-header h3{font-size:1.25rem;line-height:1.35;margin:.3rem 0 .7rem}
+.detail-explanation{background:#f5f5f5;border-left:4px solid #333;padding:.85rem 1rem;border-radius:0 9px 9px 0;color:#444;margin-bottom:1rem}
+.source-link{display:inline-flex;align-items:center;gap:.35rem;color:#111;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.alternatives{border:1px solid var(--line);border-radius:11px;padding:1rem}.alternatives h4{margin:0 0 .65rem}.candidate{padding:.7rem 0;border-top:1px solid var(--line)}.candidate:first-of-type{border-top:0}.candidate p{margin:.2rem 0}.candidate small{color:var(--muted)}
+.result-card .reference-text{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.report-meta input{width:100%;border:1px solid #bdbdbd;border-radius:9px;padding:.65rem .75rem;background:#fff}
+@media(max-width:850px){.report-meta{grid-template-columns:1fr}.results-workbench{display:block;height:auto;min-height:0;overflow:visible}.results-pane,.detail-pane{overflow:visible}.column-splitter{display:none}.detail-pane{margin-top:1rem;border-top:1px solid var(--line)}}
