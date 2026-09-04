@@ -6,7 +6,7 @@
   <meta name="description" content="Pega una bibliografía completa, identifica cada referencia y verifica sus metadatos y estilo mediante fuentes abiertas.">
   <meta name="theme-color" content="#111111">
   <title>Verificador Bibliográfico Multifuente</title>
-  <link rel="stylesheet" href="assets/styles.css?v=1.5.0">
+  <link rel="stylesheet" href="assets/styles.css?v=1.4.0">
 </head>
 <body>
   <a class="skip-link" href="#workspace">Saltar al verificador</a>
@@ -129,18 +129,15 @@
     </section>
   </main>
 
-  <footer>
-    <p>Herramienta de apoyo académico. Los resultados requieren revisión humana.</p>
-    <p class="license-line"><a href="https://rick666t.github.io/verificador-bibliografico/">Verificador bibliográfico multifuente</a> © 2026 by <a href="https://github.com/Rick666T">Ricardo Tavira Sánchez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Atribución"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="No comercial"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="Sin obras derivadas"></p>
-  </footer>
+  <footer><p>Herramienta de apoyo académico. Los resultados requieren revisión humana.</p><p>SSIE–DGBSDI, UNAM · Mtro. Ricardo Tavira Sánchez · CC BY-NC-SA 4.0</p></footer>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <dialog id="howDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Cómo funciona</h2><ol><li>Copia la lista de referencias de tu tesis y pégala completa. No tienes que capturarlas una por una.</li><li>Comprueba que el contador muestre el mismo total que tu documento. Si no coincide, deja una línea vacía entre cada referencia.</li><li>Selecciona APA 7, MLA 9, Chicago autor-fecha, Vancouver, IEEE o Harvard.</li><li>La herramienta identifica DOI, ISBN y URL, consulta fuentes abiertas y compara los datos.</li><li>Revisa la evidencia y decide si aceptas la referencia sugerida.</li></ol><p><strong>Importante:</strong> no encontrar una fuente no demuestra que sea falsa. En esos casos se marca como “no verificada”.</p></dialog>
-  <dialog id="sourcesDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Fuentes consultadas</h2><ul><li>Crossref y DataCite para publicaciones con DOI y búsquedas bibliográficas.</li><li>Open Library para libros e ISBN, con rutas de consulta redundantes.</li><li>OpenAlex y Library of Congress para ampliar la búsqueda cuando no existe identificador.</li><li>Dialnet y Docta Complutense para ampliar la localización de tesis cuando sus servicios permiten la consulta.</li><li>Metadatos JSON-LD, etiquetas de citación, Open Graph, Dublin Core y HTML visible de páginas públicas.</li></ul><p>Los enlaces editoriales solo se muestran si existe un identificador exacto o una coincidencia de 70 % o más. Ninguna API comercial es obligatoria.</p></dialog>
+  <dialog id="sourcesDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Fuentes consultadas</h2><ul><li>Crossref y DataCite para publicaciones con DOI y búsquedas bibliográficas.</li><li>Open Library para libros e ISBN.</li><li>OpenAlex y Library of Congress para ampliar la búsqueda cuando no existe identificador.</li><li>Metadatos JSON-LD, Open Graph, Dublin Core y HTML de páginas públicas.</li></ul><p>La fuente utilizada y su enlace se informan en cada resultado cuando están disponibles. Ninguna API comercial es obligatoria.</p></dialog>
   <dialog id="criteriaDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Criterios de verificación</h2><dl><dt>Verificada</dt><dd>La fuente fue localizada y los datos esenciales coinciden.</dd><dt>Con discrepancias</dt><dd>La fuente fue localizada, pero existen diferencias o metadatos esenciales ausentes.</dd><dt>Verificación parcial</dt><dd>Existe evidencia, aunque todavía requiere confirmación en el documento original.</dd><dt>No verificada</dt><dd>No se encontró evidencia suficiente en las fuentes consultadas.</dd></dl><p>La existencia de la fuente, la exactitud de los metadatos y el estilo bibliográfico se evalúan por separado.</p></dialog>
-  <dialog id="aboutDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Acerca de la herramienta</h2><p>El Verificador Bibliográfico Multifuente apoya principalmente el trabajo de editores y profesionales de la información que revisan bibliografías heterogéneas.</p><p>No sustituye la consulta del documento original, de las normas del estilo ni el juicio profesional.</p><p><strong>Versión 1.5.0</strong></p></dialog>
-  <script src="assets/config.js?v=1.5.0" defer></script>
-  <script src="assets/parser.js?v=1.5.0" defer></script>
-  <script src="assets/app.js?v=1.5.0" defer></script>
+  <dialog id="aboutDialog"><button class="dialog-close" aria-label="Cerrar">×</button><h2>Acerca de la herramienta</h2><p>El Verificador Bibliográfico Multifuente apoya principalmente el trabajo de editores y profesionales de la información que revisan bibliografías heterogéneas.</p><p>No sustituye la consulta del documento original, de las normas del estilo ni el juicio profesional.</p><p><strong>Versión 1.4.0</strong></p></dialog>
+  <script src="assets/config.js?v=1.4.0" defer></script>
+  <script src="assets/parser.js?v=1.4.0" defer></script>
+  <script src="assets/app.js?v=1.4.0" defer></script>
 </body>
 </html>
