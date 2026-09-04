@@ -63,3 +63,25 @@ body{background:linear-gradient(180deg,#ededed 0,#f8f8f8 340px);font-family:Cali
   .column-splitter{display:none}
   .detail-pane{margin-top:1rem;border-top:1px solid var(--line);padding-inline:.75rem}
 }
+
+/* Versión 1.4: espacio editorial completo y estados de metadatos inequívocos */
+.page-shell{width:calc(100% - 24px);max-width:none;margin:0 12px;padding:1.25rem 0 3rem}
+.topbar{padding-inline:16px}
+.metric strong,.suggestion p{font-family:Calibri,Aptos,"Segoe UI",Arial,sans-serif}
+.results{width:100%;margin:1.25rem 0 0;padding:0}
+.results-workbench{--list-width:32%;width:100%;height:calc(100dvh - 88px);min-height:700px;max-height:none;margin-top:.75rem;border-radius:10px}
+.results-pane{padding:.6rem}.detail-pane{padding:1rem 1.2rem}
+.missing-source,.missing-reference{color:var(--warn);font-weight:800}.missing{color:#5f6870;font-weight:700}
+.comparison thead th{position:sticky;top:0;z-index:2;box-shadow:inset 0 -1px #777}
+.comparison tbody th{position:sticky;left:0;z-index:1}
+.detail-explanation{max-width:none}
+
+@media(min-width:1500px){
+  .results-workbench{--list-width:29%}
+  .comparison .col-element{width:12%}.comparison .col-written{width:28%}.comparison .col-found{width:43%}.comparison .col-result{width:17%}
+}
+
+@media(max-width:850px){
+  .page-shell{width:calc(100% - 12px);margin:0 6px}
+  .results-workbench{height:auto;min-height:0}
+}
